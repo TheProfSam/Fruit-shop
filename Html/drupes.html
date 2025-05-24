@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior's Fruit Shop - Stone Fruits</title>
+    <link rel="stylesheet" href="../Css/pomes.css">
+    <script src="../Js/cart.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Junior's FreshFruit Market</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html" target="_self"> HOME </a></li>
+                <li><a href="citrus.html" target="_self">CITRUS</a></li>
+                <li><a href="berries.html" target="_self">BERRIES</a></li>
+                <li><a href="drupes.html" target="_self">DRUPES</a></li>
+                <li><a href="melons.html"  target="_self"> MELONS </a></li>
+                <li><a href="tropical.html" target="_self">TROPICAL</a></li>
+                <li><a href="pomes.html" target="_self">POMES</a></li>
+                <li><a href="cart.html" target="_self"> CART </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <form>
+            <input name="search" id="search" placeholder="Search your favorite stone fruit">
+        </form>
+    </div>
+
+    <section id="products">
+        <h1><hr><marquee>STONE FRUITS (DRUPES)</marquee><hr></h1>
+        <!-- <h1>STONE FRUITS (DRUPES)</h1> -->
+        <p class="intro-text">Stone fruits are sweet and juicy fruits containing a large, hard pit or "stone" inside. They offer numerous health benefits and are versatile in snacks and recipes.</p>
+        
+
+        <div class="product-category">
+            <h2>Cherries</h2>
+            <p class="product-description">Rich in antioxidants, cherries reduce inflammation and may help with recovery after exercise. Their sweet-tart flavor is beloved in pies and desserts.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/Q7.jpeg" alt="Fresh Cherries" onclick="document.getElementById('cherry1-dialog').showModal()">
+                    <p class="price">$6.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="cherry1-dialog">
+                        <h3>Fresh Cherries Details</h3>
+                        <p><strong>Variety:</strong> Bing</p>
+                        <p><strong>Origin:</strong> Washington State, USA</p>
+                        <p><strong>Nutrition:</strong> High in antioxidants and anti-inflammatory compounds</p>
+                        <p><strong>Season:</strong> May through August</p>
+                        <p><strong>Storage:</strong> Refrigerate unwashed, consume within 5-7 days</p>
+                        <button onclick="document.getElementById('cherry1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/Q8.jpeg" alt="Cherry Bowl" onclick="document.getElementById('cherry2-dialog').showModal()">
+                    <p class="price">$7.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="cherry2-dialog">
+                        <h3>Cherry Bowl Details</h3>
+                        <p><strong>Contents:</strong> 1 pound premium cherries</p>
+                        <p><strong>Preparation:</strong> Washed and ready-to-eat</p>
+                        <p><strong>Perfect for:</strong> Entertaining or special occasions</p>
+                        <p><strong>Variety:</strong> Mix of Bing and Rainier cherries</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, consume within 3-5 days</p>
+                        <button onclick="document.getElementById('cherry2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/Q9.jpeg" alt="Cherry Smoothie" onclick="document.getElementById('cherry3-dialog').showModal()">
+                    <p class="price">$8.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="cherry3-dialog">
+                        <h3>Cherry Smoothie Details</h3>
+                        <p><strong>Size:</strong> 16oz bottle</p>
+                        <p><strong>Ingredients:</strong> Tart cherries, banana, almond milk, honey</p>
+                        <p><strong>Nutrition:</strong> Supports muscle recovery and reduces inflammation</p>
+                        <p><strong>Allergens:</strong> Contains tree nuts (almonds)</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, consume within 48 hours</p>
+                        <button onclick="document.getElementById('cherry3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <div class="product-category">
+            <h2>Plums</h2>
+            <p class="product-description">Plums aid in relieving constipation and provide digestive comfort. Their sweet-tart flavor makes them versatile for eating fresh or cooking.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/Q4.jpeg" alt="Fresh Plums" onclick="document.getElementById('plum1-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="plum1-dialog">
+                        <h3>Fresh Plums Details</h3>
+                        <p><strong>Variety:</strong> Black Beauty</p>
+                        <p><strong>Origin:</strong> California, USA</p>
+                        <p><strong>Nutrition:</strong> Good source of fiber, vitamins C and K</p>
+                        <p><strong>Season:</strong> May through October</p>
+                        <p><strong>Storage:</strong> Room temperature until ripe, then refrigerate up to one week</p>
+                        <button onclick="document.getElementById('plum1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/Q5.jpeg" alt="Plum Slices" onclick="document.getElementById('plum2-dialog').showModal()">
+                    <p class="price">$5.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="plum2-dialog">
+                        <h3>Plum Slices Details</h3>
+                        <p><strong>Contents:</strong> 10oz pre-sliced plums</p>
+                        <p><strong>Preparation:</strong> Washed, pitted and sliced, ready-to-eat</p>
+                        <p><strong>Perfect for:</strong> Snacking, salads, or cooking</p>
+                        <p><strong>Packaging:</strong> Sustainable container</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, consume within 3 days</p>
+                        <button onclick="document.getElementById('plum2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/Q6.jpeg" alt="Plum Dessert" onclick="document.getElementById('plum3-dialog').showModal()">
+                    <p class="price">$6.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="plum3-dialog">
+                        <h3>Plum Dessert Details</h3>
+                        <p><strong>Description:</strong> Plum tart with almond crust</p>
+                        <p><strong>Size:</strong> 9-inch tart (serves 8)</p>
+                        <p><strong>Ingredients:</strong> Fresh plums, almonds, butter, sugar, flour</p>
+                        <p><strong>Allergens:</strong> Contains tree nuts, wheat, dairy</p>
+                        <p><strong>Storage:</strong> Refrigerate up to 2 days</p>
+                        <button onclick="document.getElementById('plum3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <div class="product-category">
+            <h2>Apricots</h2>
+            <p class="product-description">Apricots support eye health due to their vitamin A content. Their delicate flavor works well in both sweet and savory dishes.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/AP1.jpeg" alt="Fresh Apricots" onclick="document.getElementById('apricot1-dialog').showModal()">
+                    <p class="price">$4.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="apricot1-dialog">
+                        <h3>Fresh Apricots Details</h3>
+                        <p><strong>Variety:</strong> Blenheim</p>
+                        <p><strong>Origin:</strong> California, USA</p>
+                        <p><strong>Nutrition:</strong> Excellent source of vitamin A and beta-carotene</p>
+                        <p><strong>Season:</strong> May through July</p>
+                        <p><strong>Storage:</strong> Room temperature until ripe, then refrigerate up to 5 days</p>
+                        <button onclick="document.getElementById('apricot1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/AP2.jpeg" alt="Apricot Slices" onclick="document.getElementById('apricot2-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="apricot2-dialog">
+                        <h3>Apricot Slices Details</h3>
+                        <p><strong>Contents:</strong> 8oz pre-sliced apricots</p>
+                        <p><strong>Preparation:</strong> Washed, pitted and sliced, ready-to-eat</p>
+                        <p><strong>Perfect for:</strong> Cheese boards, salads, or snacking</p>
+                        <p><strong>Packaging:</strong> Compostable container</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, consume within 2 days</p>
+                        <button onclick="document.getElementById('apricot2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/AP3.jpeg" alt="Apricot Jam" onclick="document.getElementById('apricot3-dialog').showModal()">
+                    <p class="price">$6.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="apricot3-dialog">
+                        <h3>Apricot Jam Details</h3>
+                        <p><strong>Size:</strong> 12oz jar</p>
+                        <p><strong>Ingredients:</strong> Organic apricots, cane sugar, lemon juice</p>
+                        <p><strong>Processing:</strong> Small-batch, hand-made</p>
+                        <p><strong>Uses:</strong> Perfect for toast, pastries, or cheese pairings</p>
+                        <p><strong>Storage:</strong> Refrigerate after opening, use within 3 weeks</p>
+                        <button onclick="document.getElementById('apricot3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Mangoes</h2>
+            <p class="product-description">Mangoes are rich in vitamins A and C, boosting immunity. Their tropical sweetness makes them perfect for smoothies and desserts.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/MA1.jpeg" alt="Fresh Mangoes" onclick="document.getElementById('mango1-dialog').showModal()">
+                    <p class="price">$3.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="mango1-dialog">
+                        <h3>Fresh Mango Details</h3>
+                        <p><strong>Variety:</strong> Ataulfo (Honey Mango)</p>
+                        <p><strong>Origin:</strong> Mexico</p>
+                        <p><strong>Nutrition:</strong> Rich in vitamins A and C, folate</p>
+                        <p><strong>Season:</strong> March through July</p>
+                        <p><strong>Storage:</strong> Room temperature until ripe, then refrigerate up to 5 days</p>
+                        <button onclick="document.getElementById('mango1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/MA2.jpeg" alt="Mango Slices" onclick="document.getElementById('mango2-dialog').showModal()">
+                    <p class="price">$4.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="mango2-dialog">
+                        <h3>Mango Slices Details</h3>
+                        <p><strong>Contents:</strong> 10oz pre-sliced mango</p>
+                        <p><strong>Preparation:</strong> Peeled, pitted and sliced, ready-to-eat</p>
+                        <p><strong>Perfect for:</strong> Tropical fruit salads, smoothies, desserts</p>
+                        <p><strong>Packaging:</strong> Recyclable container</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, consume within 3 days</p>
+                        <button onclick="document.getElementById('mango2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/MA3.jpeg" alt="Mango Smoothie" onclick="document.getElementById('mango3-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="mango3-dialog">
+                        <h3>Mango Smoothie Details</h3>
+                        <p><strong>Size:</strong> 16oz bottle</p>
+                        <p><strong>Ingredients:</strong> Fresh mangoes, coconut milk, banana, lime juice</p>
+                        <p><strong>Nutrition:</strong> Good source of vitamins A and C, potassium</p>
+                        <p><strong>Allergens:</strong> Contains coconut</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, consume within 24 hours</p>
+                        <button onclick="document.getElementById('mango3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Peaches</h2>
+            <p class="product-description">Peaches support skin health and aid digestion. Their sweet flesh and fuzzy skin make them a summer favorite.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/Q1.jpeg" alt="Fresh Peaches" onclick="document.getElementById('peach1-dialog').showModal()">
+                    <p class="price">$5.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="peach1-dialog">
+                        <h3>Fresh Peaches Details</h3>
+                        <p><strong>Variety:</strong> Elberta</p>
+                        <p><strong>Origin:</strong> Georgia, USA</p>
+                        <p><strong>Nutrition:</strong> Rich in vitamins A and C, potassium and fiber</p>
+                        <p><strong>Season:</strong> June through September</p>
+                        <p><strong>Storage:</strong> Room temperature until ripe, then refrigerate up to 5 days</p>
+                        <button onclick="document.getElementById('peach1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/Q2.jpeg" alt="Peach Slices" onclick="document.getElementById('peach2-dialog').showModal()">
+                    <p class="price">$6.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="peach2-dialog">
+                        <h3>Peach Slices Details</h3>
+                        <p><strong>Contents:</strong> 12oz pre-sliced peaches</p>
+                        <p><strong>Preparation:</strong> Washed, pitted and sliced, ready-to-eat</p>
+                        <p><strong>Perfect for:</strong> Fruit salads, dessert toppings, or snacking</p>
+                        <p><strong>Packaging:</strong> Eco-friendly recyclable container</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, consume within 2-3 days</p>
+                        <button onclick="document.getElementById('peach2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../Media/Images/Q3.jpeg" alt="Peach Dessert" onclick="document.getElementById('peach3-dialog').showModal()">
+                    <p class="price">$7.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    
+                    <dialog id="peach3-dialog">
+                        <h3>Peach Dessert Details</h3>
+                        <p><strong>Description:</strong> Homemade peach cobbler</p>
+                        <p><strong>Size:</strong> 8-inch dish (serves 6-8)</p>
+                        <p><strong>Ingredients:</strong> Fresh peaches, butter, sugar, flour, cinnamon</p>
+                        <p><strong>Allergens:</strong> Contains wheat, dairy</p>
+                        <p><strong>Storage:</strong> Refrigerate up to 3 days, best served warm</p>
+                        <button onclick="document.getElementById('peach3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Junior's Fruit Shop. Follow us on <a href="#social">Facebook</a>, <a href="#social">Instagram</a>, or <a href="#social">Twitter</a>.</p>
+    </footer>
+
+</body>
+</html>

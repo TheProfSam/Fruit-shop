@@ -1,0 +1,283 @@
+/* berries.css - Professional E-commerce Style */
+
+/* Base Styles */
+:root {
+    --primary-color: #4CAF50; /* Fresh green */
+    --secondary-color: #FF9800; /* Citrus orange */
+    --accent-color: #E91E63; /* Berry pink */
+    --dark-color: #333;
+    --light-color: #f9f9f9;
+    --text-color: #444;
+    --white: #fff;
+    --box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: var(--transition);
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  /* Hero Section */
+  div:first-of-type {
+    text-align: center;
+    padding: 3rem 5%;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('fruit-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  div:first-of-type h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  div:first-of-type p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Secondary Navigation */
+  nav:first-of-type {
+    background-color: var(--dark-color);
+    padding: 1rem 5%;
+    text-align: center;
+  }
+  
+  nav:first-of-type a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  nav:first-of-type a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Search Bar */
+  search {
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+  }
+  
+  search form {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  #search {
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: var(--transition);
+  }
+  
+  #search:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  /* Products Section */
+  #products {
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #products h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  #products > p {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+  }
+  
+  .product {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .product h3 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .product p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .product img {
+    border-radius: 6px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    transition: var(--transition);
+    object-fit: cover;
+    height: 150px;
+  }
+  
+  .product img:hover {
+    transform: scale(1.05);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: block;
+    margin-top: 1.5rem;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--dark-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 3rem;
+  }
+  
+  footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+  }
+  
+  footer a:hover {
+    color: var(--white);
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    nav ul {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin: 0.5rem;
+    }
+    
+    .product img {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .product button {
+    display: block;
+    margin: 0 auto; /* Centers horizontally */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: #45a049;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+

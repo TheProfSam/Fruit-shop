@@ -1,0 +1,237 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #FF9800;
+  --accent-color: #E91E63;
+  --dark-color: #333;
+  --light-color: #f9f9f9;
+  --text-color: #444;
+  --white: #fff;
+  --box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  background-color: var(--light-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+nav ul li a:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Cart Section */
+#cart {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 5%;
+}
+
+#cart h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+/* Cart Items */
+#cart-items {
+  margin-bottom: 3rem;
+}
+
+.cart-item {
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: var(--box-shadow);
+}
+
+.cart-item img {
+  max-width: 150px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.cart-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.cart-item .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Quantity and Remove Buttons on new lines */
+.quantity-controls,
+.remove-button {
+  margin-bottom: 0.5rem;
+}
+
+.quantity-controls button,
+.remove-button button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-right: 0.5rem;
+}
+
+.quantity-controls button:hover,
+.remove-button button:hover {
+  background-color:var(--accent-color);
+}
+
+/* Summary Section */
+.cart-summary {
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.cart-summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.cart-summary p,
+.cart-summary h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.cart-summary h3 {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.cart-summary a{
+text-decoration: none;
+color: white;
+
+}
+
+#checkout-btn {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#checkout-btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 5%;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-item img {
+    max-width: 100px;
+  }
+
+  .quantity-controls,
+  .remove-button {
+    text-align: center;
+  }
+}
+.btn-remove {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-remove:hover {
+  background-color: #c2185b;
+}

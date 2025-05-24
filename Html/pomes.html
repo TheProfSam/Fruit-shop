@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior's Fruit Shop - Pome Fruits</title>
+    <link rel="stylesheet" href="../Css/pomes.css">
+    <script src="../Js/cart.js" defer></script>
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">Junior's FreshFruit Market</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html" target="_self"> HOME </a></li>
+                <li><a href="citrus.html" target="_self">CITRUS</a></li>
+                <li><a href="berries.html" target="_self">BERRIES</a></li>
+                <li><a href="drupes.html" target="_self">DRUPES</a></li>
+                <li><a href="melons.html" target="_self"> MELONS </a></li>
+                <li><a href="tropical.html" target="_self">TROPICAL</a></li>
+                <li><a href="pomes.html" target="_self">POMES</a></li>
+                <li><a href="cart.html" target="_self">CART (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <form>
+            <input name="search" id="search" placeholder="Search your favourite pome fruit">
+        </form>
+    </div>
+
+    <section id="products">
+        <h1><hr><marquee>POME FRUITS</marquee><hr></h1>
+        <!-- <h1>POME FRUITS</h1> -->
+        <p class="intro-text">Pome fruits are delicious and nutritious fruits characterized by a core containing seeds, surrounded by a fleshy, edible layer. Perfect for promoting heart health and digestion!</p>
+        
+        <div class="product-category">
+            <h2>Apples</h2>
+            <p class="product-description">Support heart health and weight management. Apples are versatile for snacks, desserts, and salads. Note: their acidity may aggravate acid reflux in some individuals.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/A1.jpg" alt="Fresh Apples" onclick="document.getElementById('apple1-dialog').showModal()">
+                    <p class="price">$4.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Apples', '$4.99', '../Media/Images/A1.jpg')">Add to Cart</button>
+                    
+                    <dialog id="apple1-dialog">
+                        <h3>Fresh Apples Details</h3>
+                        <p><strong>Variety:</strong> Honeycrisp</p>
+                        <p><strong>Origin:</strong> Washington State, USA</p>
+                        <p><strong>Nutrition:</strong> High in fiber and vitamin C. Low calorie (95cal per medium apple).</p>
+                        <p><strong>Storage:</strong> Keep refrigerated for up to 4 weeks</p>
+                        <p><strong>Best uses:</strong> Eating fresh, baking, or making apple sauce</p>
+                        <button onclick="document.getElementById('apple1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/A2.jpg" alt="Apple Slices" onclick="document.getElementById('apple2-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Apple Slices', '$5.49', '../Media/Images/A2.jpg')">Add to Cart</button>
+                    
+                    <dialog id="apple2-dialog">
+                        <h3>Apple Slices Details</h3>
+                        <p><strong>Preparation:</strong> Freshly sliced, ready-to-eat</p>
+                        <p><strong>Varieties included:</strong> Fuji, Gala, and Granny Smith</p>
+                        <p><strong>Preservation:</strong> Treated with natural vitamin C to prevent browning</p>
+                        <p><strong>Serving size:</strong> About 3 medium apples per package</p>
+                        <p><strong>Best uses:</strong> Snacking, lunchboxes, or fruit salads</p>
+                        <button onclick="document.getElementById('apple2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/A3.jpg" alt="Apple Pie" onclick="document.getElementById('apple3-dialog').showModal()">
+                    <p class="price">$6.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Apple Pie', '$6.99', '../Media/Images/A3.jpg')">Add to Cart</button>
+                    
+                    <dialog id="apple3-dialog">
+                        <h3>Apple Pie Details</h3>
+                        <p><strong>Ingredients:</strong> Fresh apples, cinnamon, nutmeg, all-butter crust</p>
+                        <p><strong>Size:</strong> 9-inch diameter (serves 8)</p>
+                        <p><strong>Allergens:</strong> Contains wheat, dairy</p>
+                        <p><strong>Storage:</strong> Refrigerate after purchase. Best consumed within 3 days.</p>
+                        <p><strong>Heating instructions:</strong> Warm at 350°F for 15 minutes for best flavor</p>
+                        <button onclick="document.getElementById('apple3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Pears</h2>
+            <p class="product-description">Pears are high in fiber and promote digestive health. Their juicy sweetness and smooth texture make them ideal for snacking, baking, or adding to salads.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/P1.jpg" alt="Fresh Pears" onclick="document.getElementById('pear1-dialog').showModal()">
+                    <p class="price">$5.29</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Pears', '$5.29', '../Media/Images/P1.jpg')">Add to Cart</button>
+                    
+                    <dialog id="pear1-dialog">
+                        <h3>Fresh Pears Details</h3>
+                        <p><strong>Variety:</strong> Bartlett</p>
+                        <p><strong>Origin:</strong> California, USA</p>
+                        <p><strong>Ripeness:</strong> Ships firm, ripens at room temperature in 3-5 days</p>
+                        <p><strong>Nutrition:</strong> Excellent source of fiber (6g per medium pear)</p>
+                        <p><strong>Best uses:</strong> Eating fresh, poaching, or adding to cheese boards</p>
+                        <button onclick="document.getElementById('pear1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/P2.jpg" alt="Pear Slices" onclick="document.getElementById('pear2-dialog').showModal()">
+                    <p class="price">$5.79</p>
+                    <button class="add-to-cart" onclick="addToCart('Pear Slices', '$5.79', '../Media/Images/P2.jpg')">Add to Cart</button>
+                    
+                    <dialog id="pear2-dialog">
+                        <h3>Pear Slices Details</h3>
+                        <p><strong>Preparation:</strong> Freshly sliced, ready-to-use</p>
+                        <p><strong>Variety:</strong> Comice pears (known as the sweetest variety)</p>
+                        <p><strong>Preservation:</strong> Treated with citrus juice to maintain freshness</p>
+                        <p><strong>Serving size:</strong> About 2 medium pears per package</p>
+                        <p><strong>Pairing suggestion:</strong> Excellent with blue cheese or walnuts</p>
+                        <button onclick="document.getElementById('pear2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/P3.jpg" alt="Pear Smoothie" onclick="document.getElementById('pear3-dialog').showModal()">
+                    <p class="price">$6.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Pear Smoothie', '$6.49', '../Media/Images/P3.jpg')">Add to Cart</button>
+                    
+                    <dialog id="pear3-dialog">
+                        <h3>Pear Smoothie Details</h3>
+                        <p><strong>Ingredients:</strong> Fresh pears, Greek yogurt, honey, cinnamon</p>
+                        <p><strong>Size:</strong> 16oz ready-to-drink bottle</p>
+                        <p><strong>Allergens:</strong> Contains dairy</p>
+                        <p><strong>Storage:</strong> Keep refrigerated. Consume within 3 days of purchase.</p>
+                        <p><strong>Nutrition:</strong> 250 calories, 5g protein, excellent source of vitamin C</p>
+                        <button onclick="document.getElementById('pear3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Junior's Fruit Shop. Follow us on <a href="#social">Facebook</a>, <a href="#social">Instagram</a>, or <a href="#social">Twitter</a>.</p>
+    </footer>
+
+</body>
+</html>

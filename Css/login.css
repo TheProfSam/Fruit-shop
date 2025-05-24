@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+  
+header {
+    background-color: #2d6a4f;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+  
+.logo {
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Auth Container */
+.auth-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+  
+.auth-container h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2d6a4f;
+}
+  
+label {
+    font-size: 1em;
+    display: block;
+    margin-bottom: 8px;
+}
+  
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.3s;
+}
+  
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    border-color: #2d6a4f;
+    outline: none;
+}
+  
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+  
+button[type="submit"] {
+    background-color: #2d6a4f;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button[type="submit"]:hover {
+    background-color: #1f4e38;
+}
+
+/* Styling for Sign Up Button (similar to Submit Button) */
+button[type="button"] {
+    background-color: #2d6a4f;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button[type="button"]:hover {
+    background-color: #1f4e38;
+}
+
+form p {
+    text-align: center;
+    margin-top: 10px;
+}
+  
+form p a {
+    color: #2d6a4f;
+    text-decoration: none;
+}
+  
+form p a:hover {
+    text-decoration: underline;
+}
+  
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #2d6a4f;
+    color: #fff;
+    padding: 20px;
+}
+  
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+footer a:hover {
+    text-decoration: underline;
+}

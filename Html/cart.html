@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Junior's Fruit Market</title>
+  <link rel="stylesheet" href="../Css/pomes.css" />
+  <link rel="stylesheet" href="../Css/cart.css" />
+  <script src="../Js/cart.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Junior's FreshFruit Market</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="citrus.html">CITRUS</a></li>
+        <li><a href="berries.html">BERRIES</a></li>
+        <li><a href="drupes.html">DRUPES</a></li>
+        <li><a href="melons.html">MELONS</a></li>
+        <li><a href="tropical.html">TROPICAL</a></li>
+        <li><a href="pomes.html">POMES</a></li>
+        <li><a href="cart.html">CART (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cart-container">
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-items">
+      <!-- Dynamic items injected here by cart.js -->
+    </div>
+
+    <div class="cart-summary">
+      <h2>Order Summary</h2>
+      <p>Subtotal: <span id="cart-subtotal">$0.00</span></p>
+      <p>Tax (8%): <span id="cart-tax">$0.00</span></p>
+      <p>Shipping: <span id="cart-shipping">$0.00</span></p>
+      <h3>Total: <span id="cart-total">$0.00</span></h3>
+      <!-- <div class="remove-button"><button class="btn-remove">Remove</button></div> -->
+      <button id="checkout-btn" onclick="checkout()"><a href="checkout.html">Proceed to Checkout</a></button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Junior's Fruit Shop. Follow us on 
+      <a href="#social">Facebook</a>, 
+      <a href="#social">Instagram</a>, or 
+      <a href="#social">Twitter</a>.
+    </p>
+  </footer>
+
+  
+</body>
+</html>

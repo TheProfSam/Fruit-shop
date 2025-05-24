@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior's Fruit Shop - Citrus Fruits</title>
+    <link rel="stylesheet" href="../Css/pomes.css">
+    <script src="../Js/cart.js" defer></script>
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">Junior's FreshFruit Market</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="citrus.html">CITRUS</a></li>
+                <li><a href="berries.html">BERRIES</a></li>
+                <li><a href="drupes.html">DRUPES</a></li>
+                <li><a href="melons.html">MELONS</a></li>
+                <li><a href="tropical.html">TROPICAL</a></li>
+                <li><a href="pomes.html">POMES</a></li>
+                <li><a href="cart.html">CART (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <form>
+            <input name="search" id="search" placeholder="Search your favorite citrus fruit">
+        </form>
+    </div>
+
+    <section id="products">
+        <h1><hr><marquee>CITRUS FRUITS</marquee><hr></h1>
+        <!-- <h1>CITRUS FRUITS</h1> -->
+        <p class="intro-text">Citrus fruits are packed with vitamin C, antioxidants, and refreshing tangy flavors that make them essential for a healthy diet.</p>
+        
+        <div class="product-category">
+            <h2>Oranges</h2>
+            <p class="product-description">Boost immune function and support skin health. Their sweet-tangy taste makes them perfect for juices, snacks, and desserts.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/C1.jpg" alt="Fresh Oranges" onclick="document.getElementById('orange1-dialog').showModal()">
+                    <p class="price">$4.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Oranges', '$4.99', '../Media/Images/C1.jpg')">Add to Cart</button>
+                    
+                    <dialog id="orange1-dialog">
+                        <h3>Fresh Oranges Details</h3>
+                        <p><strong>Variety:</strong> Ghanaian Oranges</p>
+                        <p><strong>Origin:</strong> Florida, USA</p>
+                        <p><strong>Nutrition:</strong> High in vitamin C (70mg per orange), good source of fiber</p>
+                        <p><strong>Season:</strong> Best from November to April</p>
+                        <p><strong>Storage:</strong> Room temperature for 1 week or refrigerate for 2-3 weeks</p>
+                        <button onclick="document.getElementById('orange1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/C2.jpg" alt="Orange Juice" onclick="document.getElementById('orange2-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Orange Juice', '$5.49', '../Media/Images/C2.jpg')">Add to Cart</button>
+                    
+                    <dialog id="orange2-dialog">
+                        <h3>Orange Juice Details</h3>
+                        <p><strong>Type:</strong> 100% Pure Squeezed</p>
+                        <p><strong>Size:</strong> 32oz (946ml) bottle</p>
+                        <p><strong>Pasteurized:</strong> Yes, for longer shelf life</p>
+                        <p><strong>Ingredients:</strong> Oranges only, no additives</p>
+                        <p><strong>Storage:</strong> Refrigerate after opening, consume within 7 days</p>
+                        <button onclick="document.getElementById('orange2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/C3.webp" alt="Orange Basket" onclick="document.getElementById('orange3-dialog').showModal()">
+                    <p class="price">$6.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Orange Basket', '$6.99', '../Media/Images/C3.webp')">Add to Cart</button>
+                    
+                    <dialog id="orange3-dialog">
+                        <h3>Orange Basket Details</h3>
+                        <p><strong>Contents:</strong> 12 premium navel oranges</p>
+                        <p><strong>Gift packaging:</strong> Woven basket with handle</p>
+                        <p><strong>Weight:</strong> Approximately 4 lbs total</p>
+                        <p><strong>Seasonal:</strong> Available December through March</p>
+                        <p><strong>Perfect for:</strong> Gifts, office deliveries, or family snacks</p>
+                        <button onclick="document.getElementById('orange3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Lemons</h2>
+            <p class="product-description">Aid digestion and provide antioxidants. Their acidity makes them ideal for beverages, cooking, and skincare.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/C4.jpg" alt="Fresh Lemons" onclick="document.getElementById('lemon1-dialog').showModal()">
+                    <p class="price">$3.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Lemons', '$3.99', '../Media/Images/C4.jpg')">Add to Cart</button>
+                    
+                    <dialog id="lemon1-dialog">
+                        <h3>Fresh Lemons Details</h3>
+                        <p><strong>Variety:</strong> Eureka Lemons</p>
+                        <p><strong>Origin:</strong> California, USA</p>
+                        <p><strong>Juice yield:</strong> 2-3 tablespoons per lemon</p>
+                        <p><strong>Storage:</strong> Room temperature for 1 week or refrigerate for 3-4 weeks</p>
+                        <p><strong>Uses:</strong> Drinks, cooking, cleaning, and beauty treatments</p>
+                        <button onclick="document.getElementById('lemon1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/C111.jpg" alt="Lemon Slices" onclick="document.getElementById('lemon2-dialog').showModal()">
+                    <p class="price">$4.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Lemon Slices', '$4.99', '../Media/Images/C111.jpg')">Add to Cart</button>
+                    
+                    <dialog id="lemon2-dialog">
+                        <h3>Lemon Slices Details</h3>
+                        <p><strong>Preparation:</strong> Freshly sliced, ready-to-use</p>
+                        <p><strong>Thickness:</strong> 1/4 inch slices</p>
+                        <p><strong>Quantity:</strong> About 15 slices per container</p>
+                        <p><strong>Best uses:</strong> Drink garnishes, cooking, water infusions</p>
+                        <p><strong>Shelf life:</strong> 4-6 days refrigerated</p>
+                        <button onclick="document.getElementById('lemon2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/C6.jpg" alt="Lemon Basket" onclick="document.getElementById('lemon3-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Lemon Basket', '$5.49', '../Media/Images/C6.jpg')">Add to Cart</button>
+                    
+                    <dialog id="lemon3-dialog">
+                        <h3>Lemon Basket Details</h3>
+                        <p><strong>Contents:</strong> 15 fresh lemons</p>
+                        <p><strong>Packaging:</strong> Decorative wooden crate</p>
+                        <p><strong>Weight:</strong> Approximately 3.5 lbs total</p>
+                        <p><strong>Season:</strong> Available year-round</p>
+                        <p><strong>Perfect for:</strong> Restaurants, caterers, or home bartenders</p>
+                        <button onclick="document.getElementById('lemon3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Grapefruits</h2>
+            <p class="product-description">Known for their bittersweet taste, grapefruits support weight loss and metabolism. They are an excellent addition to breakfast meals.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/C122.jpg" alt="Fresh Grapefruits" onclick="document.getElementById('grapefruit1-dialog').showModal()">
+                    <p class="price">$5.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Grapefruits', '$5.99', '../Media/Images/C122.jpg')">Add to Cart</button>
+                    
+                    <dialog id="grapefruit1-dialog">
+                        <h3>Fresh Grapefruits Details</h3>
+                        <p><strong>Variety:</strong> Ruby Red</p>
+                        <p><strong>Origin:</strong> Texas, USA</p>
+                        <p><strong>Sweetness:</strong> Less bitter than white grapefruit</p>
+                        <p><strong>Nutrition:</strong> Excellent source of vitamin A and potassium</p>
+                        <p><strong>Best uses:</strong> Breakfast, salads, or juicing</p>
+                        <button onclick="document.getElementById('grapefruit1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/C123.jpg" alt="Grapefruit Juice" onclick="document.getElementById('grapefruit2-dialog').showModal()">
+                    <p class="price">$6.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Grapefruit Juice', '$6.49', '../Media/Images/C123.jpg')">Add to Cart</button>
+                    
+                    <dialog id="grapefruit2-dialog">
+                        <h3>Grapefruit Juice Details</h3>
+                        <p><strong>Type:</strong> Not from concentrate</p>
+                        <p><strong>Size:</strong> 64oz (1.89L) bottle</p>
+                        <p><strong>Ingredients:</strong> 100% grapefruit juice</p>
+                        <p><strong>Note:</strong> May interact with certain medications</p>
+                        <p><strong>Storage:</strong> Refrigerate after opening, consume within 10 days</p>
+                        <button onclick="document.getElementById('grapefruit2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/C124.jpg" alt="Grapefruit Slices" onclick="document.getElementById('grapefruit3-dialog').showModal()">
+                    <p class="price">$7.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Grapefruit Slices', '$7.49', '../Media/Images/C124.jpg')">Add to Cart</button>
+                    
+                    <dialog id="grapefruit3-dialog">
+                        <h3>Grapefruit Slices Details</h3>
+                        <p><strong>Preparation:</strong> Pre-sectioned, ready-to-eat</p>
+                        <p><strong>Variety:</strong> Pink grapefruit</p>
+                        <p><strong>Quantity:</strong> About 2 whole grapefruits per package</p>
+                        <p><strong>Perfect for:</strong> Breakfast, snacks, or fruit salads</p>
+                        <p><strong>Shelf life:</strong> 3-5 days refrigerated</p>
+                        <button onclick="document.getElementById('grapefruit3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Limes</h2>
+            <p class="product-description">Enhance skin health and aid digestion. Their refreshing tartness adds a burst of flavor to beverages and meals.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/C8.jpg" alt="Fresh Limes" onclick="document.getElementById('lime1-dialog').showModal()">
+                    <p class="price">$4.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Limes', '$4.49', '../Media/Images/C8.jpg')">Add to Cart</button>
+                    
+                    <dialog id="lime1-dialog">
+                        <h3>Fresh Limes Details</h3>
+                        <p><strong>Variety:</strong> Persian (Bearss) limes</p>
+                        <p><strong>Origin:</strong> Mexico</p>
+                        <p><strong>Juice yield:</strong> 1-2 tablespoons per lime</p>
+                        <p><strong>Storage:</strong> Room temperature for 1 week or refrigerate for 2-3 weeks</p>
+                        <p><strong>Best uses:</strong> Cocktails, Mexican cuisine, marinades</p>
+                        <button onclick="document.getElementById('lime1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/C7.jpg" alt="Lime Slices" onclick="document.getElementById('lime2-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Lime Slices', '$5.49', '../Media/Images/C7.jpg')">Add to Cart</button>
+                    
+                    <dialog id="lime2-dialog">
+                        <h3>Lime Slices Details</h3>
+                        <p><strong>Preparation:</strong> Freshly cut, ready-to-use</p>
+                        <p><strong>Thickness:</strong> 1/4 inch slices</p>
+                        <p><strong>Quantity:</strong> About 15 slices per container</p>
+                        <p><strong>Best uses:</strong> Drink garnishes, ceviche, guacamole</p>
+                        <p><strong>Shelf life:</strong> 4-6 days refrigerated</p>
+                        <button onclick="document.getElementById('lime2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/C7.webp" alt="Lime Basket" onclick="document.getElementById('lime3-dialog').showModal()">
+                    <p class="price">$6.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Lime Basket', '$6.49', '../Media/Images/C7.webp')">Add to Cart</button>
+                    
+                    <dialog id="lime3-dialog">
+                        <h3>Lime Basket Details</h3>
+                        <p><strong>Contents:</strong> 25 fresh limes</p>
+                        <p><strong>Packaging:</strong> Decorative wire basket</p>
+                        <p><strong>Weight:</strong> Approximately 4 lbs total</p>
+                        <p><strong>Season:</strong> Available year-round</p>
+                        <p><strong>Perfect for:</strong> Parties, bars, or high-volume kitchens</p>
+                        <button onclick="document.getElementById('lime3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Tangerines</h2>
+            <p class="product-description">Tangerines provide antioxidants and vitamin C. Their sweet taste makes them perfect for snacking or as a dessert ingredient.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/C9.jpg" alt="Fresh Tangerines" onclick="document.getElementById('tangerine1-dialog').showModal()">
+                    <p class="price">$4.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Tangerines', '$4.99', '../Media/Images/C9.jpg')">Add to Cart</button>
+                    
+                    <dialog id="tangerine1-dialog">
+                        <h3>Fresh Tangerines Details</h3>
+                        <p><strong>Variety:</strong> Clementines</p>
+                        <p><strong>Origin:</strong> Spain</p>
+                        <p><strong>Peelability:</strong> Easy to peel, seedless</p>
+                        <p><strong>Season:</strong> November through January</p>
+                        <p><strong>Perfect for:</strong> Lunchboxes, snacks, or fruit salads</p>
+                        <button onclick="document.getElementById('tangerine1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/c10.jpg" alt="Tangerine Basket" onclick="document.getElementById('tangerine2-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Tangerine Basket', '$5.49', '../Media/Images/c10.jpg')">Add to Cart</button>
+                    
+                    <dialog id="tangerine2-dialog">
+                        <h3>Tangerine Basket Details</h3>
+                        <p><strong>Contents:</strong> 18 clementine tangerines</p>
+                        <p><strong>Packaging:</strong> Wicker gift basket with cellophane</p>
+                        <p><strong>Weight:</strong> Approximately 5 lbs total</p>
+                        <p><strong>Seasonal:</strong> Available November through February</p>
+                        <p><strong>Perfect for:</strong> Holiday gifts or healthy office snacks</p>
+                        <button onclick="document.getElementById('tangerine2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/C12.jpg" alt="Tangerine Slices" onclick="document.getElementById('tangerine3-dialog').showModal()">
+                    <p class="price">$6.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Tangerine Slices', '$6.49', '../Media/Images/C12.jpg')">Add to Cart</button>
+                    
+                    <dialog id="tangerine3-dialog">
+                        <h3>Tangerine Slices Details</h3>
+                        <p><strong>Preparation:</strong> Peeled and segmented</p>
+                        <p><strong>Variety:</strong> Honey tangerines</p>
+                        <p><strong>Quantity:</strong> About 3 whole tangerines per package</p>
+                        <p><strong>Perfect for:</strong> Salads, desserts, or snacking</p>
+                        <p><strong>Shelf life:</strong> 3-5 days refrigerated</p>
+                        <button onclick="document.getElementById('tangerine3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Junior's Fruit Shop. Follow us on <a href="#social">Facebook</a>, <a href="#social">Instagram</a>, or <a href="#social">Twitter</a>.</p>
+    </footer>
+
+</body>
+</html>

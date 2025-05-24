@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Signup - Junior's Fruit Shop</title>
+  <link rel="stylesheet" href="../Css/login.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Junior's FreshFruit Market</div>
+    <nav>
+      <!-- <li><a href="../index.html">HOME</a></li>
+      <li><a href="citrus.html">CITRUS</a></li>
+      <li><a href="berries.html">BERRIES</a></li>
+      <li><a href="drupes.html">DRUPES</a></li>
+      <li><a href="melons.html">MELONS</a></li>
+      <li><a href="tropical.html">TROPICAL</a></li>
+      <li><a href="pomes.html">POMES</a></li>
+      <li><a href="cart.html">CART</a></li> -->
+    </nav>
+  </header>
+
+  <div class="auth-container">
+    <div class="auth-toggle">
+      <!-- <button id="loginBtn">LOGIN</button>
+      <button id="signupBtn">SIGNUP</button> -->
+    </div>
+
+    <!-- Login Form (default visible) -->
+    <form action="/login" method="POST" id="loginForm">
+      <h2>Login to Your Account</h2>
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="email" required>
+      <br><br>
+
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="password" required>
+      <br><br>
+
+      <label>
+        <input type="checkbox" name="remember">
+        Remember me
+      </label>
+      <br><br>
+
+      <a href="berries.html"><button type="button"> LOGIN</button></a>
+
+      <p><a href="#">Forgot Password?</a></p>
+      <!-- Add the Sign Up link here -->
+      <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </form>
+
+    <!-- Signup Form (default hidden; show with JS/CSS) -->
+    <form action="/signup" method="POST" id="signupForm" style="display: none;">
+      <h2>Create an Account</h2>
+
+      <label for="signupName">Full Name:</label>
+      <input type="text" id="signupName" name="name" required>
+      <br><br>
+
+      <label for="signupEmail">Email:</label>
+      <input type="email" id="signupEmail" name="email" required>
+      <br><br>
+
+      <label for="signupPassword">Password:</label>
+      <input type="password" id="signupPassword" name="password" required>
+      <br><br>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirm_password" required>
+      <br><br>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Junior's Fruit Shop. Follow us on <br>
+      <a href="#social">Facebook</a><br>
+      <a href="#social">Instagram</a><br>
+      <a href="#social">Twitter</a>
+    </p>
+  </footer>
+
+</body>
+</html>

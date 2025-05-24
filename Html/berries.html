@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior's Fruit Shop - Berries</title>
+    <link rel="stylesheet" href="../Css/pomes.css">
+    <script src="../Js/cart.js" defer></script>
+   
+</head>
+<body>
+
+    <header>
+        <div class="logo">Junior's FreshFruit Market</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="citrus.html">CITRUS</a></li>
+                <li><a href="berries.html">BERRIES</a></li>
+                <li><a href="drupes.html">DRUPES</a></li>
+                <li><a href="melons.html">MELONS</a></li>
+                <li><a href="tropical.html">TROPICAL</a></li>
+                <li><a href="pomes.html">POMES</a></li>
+                <li><a href="cart.html">CART (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <form>
+            <input name="search" id="search" placeholder="Search your favorite berry">
+        </form>
+    </div>
+
+    <section id="products">
+        <h1><hr><marquee>BERRIES</marquee><hr></h1>
+        <!-- <h1>BERRIES</h1> -->
+        <p class="intro-text">Berries are nutrient-rich fruits packed with antioxidants, fiber, and vitamins. Their vibrant flavors make them perfect for snacks, desserts, and smoothies.</p>
+        
+        <div class="product-category">
+            <h2>Strawberries</h2>
+            <p class="product-description">Rich in vitamin C and antioxidants, strawberries are a sweet, refreshing treat. They pair well with desserts, smoothies, and salads.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/B1.jpg" alt="Fresh Strawberries" onclick="document.getElementById('strawberry1-dialog').showModal()">
+                    <p class="price">$5.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Strawberries', '$5.99', '../Media/Images/B1.jpg')">Add to Cart</button>
+                    
+                    <dialog id="strawberry1-dialog">
+                        <h3>Fresh Strawberries Details</h3>
+                        <p><strong>Variety:</strong> Albion</p>
+                        <p><strong>Origin:</strong> California, USA</p>
+                        <p><strong>Nutrition:</strong> Excellent source of vitamin C (89mg per cup)</p>
+                        <p><strong>Season:</strong> April through September</p>
+                        <p><strong>Storage:</strong> Refrigerate unwashed, consume within 3-5 days</p>
+                        <button onclick="document.getElementById('strawberry1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/B2.webp" alt="Strawberries in a Basket" onclick="document.getElementById('strawberry2-dialog').showModal()">
+                    <p class="price">$6.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Strawberries in Basket', '$6.49', '../Media/Images/B2.webp')">Add to Cart</button>
+                    
+                    <dialog id="strawberry2-dialog">
+                        <h3>Strawberry Basket Details</h3>
+                        <p><strong>Contents:</strong> 2 lbs fresh strawberries</p>
+                        <p><strong>Packaging:</strong> Hand-woven wooden basket</p>
+                        <p><strong>Perfect for:</strong> Gifts or special occasions</p>
+                        <p><strong>Seasonal:</strong> Best May through July</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, consume within 2-3 days</p>
+                        <button onclick="document.getElementById('strawberry2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/B3.webp" alt="Strawberry Dessert" onclick="document.getElementById('strawberry3-dialog').showModal()">
+                    <p class="price">$7.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Strawberry Dessert', '$7.99', '../Media/Images/B3.webp')">Add to Cart</button>
+                    
+                    <dialog id="strawberry3-dialog">
+                        <h3>Strawberry Dessert Details</h3>
+                        <p><strong>Description:</strong> Chocolate-dipped strawberries</p>
+                        <p><strong>Quantity:</strong> 12 pieces per box</p>
+                        <p><strong>Ingredients:</strong> Fresh strawberries, dark chocolate</p>
+                        <p><strong>Allergens:</strong> Contains dairy</p>
+                        <p><strong>Shelf life:</strong> Best consumed same day</p>
+                        <button onclick="document.getElementById('strawberry3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Blueberries</h2>
+            <p class="product-description">Packed with antioxidants, blueberries support heart health and cognitive function. Their sweet taste makes them great for baking and snacking.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/B5.jpg" alt="Fresh Blueberries" onclick="document.getElementById('blueberry1-dialog').showModal()">
+                    <p class="price">$4.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Blueberries', '$4.99', '../Media/Images/B5.jpg')">Add to Cart</button>
+                    
+                    <dialog id="blueberry1-dialog">
+                        <h3>Fresh Blueberries Details</h3>
+                        <p><strong>Variety:</strong> Duke</p>
+                        <p><strong>Origin:</strong> Michigan, USA</p>
+                        <p><strong>Nutrition:</strong> High in antioxidants (9.2 mmol per 100g)</p>
+                        <p><strong>Season:</strong> July through August</p>
+                        <p><strong>Storage:</strong> Refrigerate unwashed, lasts 1-2 weeks</p>
+                        <button onclick="document.getElementById('blueberry1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/B4.jpg" alt="Blueberries in a Bowl" onclick="document.getElementById('blueberry2-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Blueberries in Bowl', '$5.49', '../Media/Images/B4.jpg')">Add to Cart</button>
+                    
+                    <dialog id="blueberry2-dialog">
+                        <h3>Blueberry Bowl Details</h3>
+                        <p><strong>Contents:</strong> 1 pint fresh blueberries</p>
+                        <p><strong>Preparation:</strong> Washed and ready-to-eat</p>
+                        <p><strong>Perfect for:</strong> Breakfast bowls or snacks</p>
+                        <p><strong>Seasonal:</strong> Available June through September</p>
+                        <p><strong>Storage:</strong> Consume within 3-5 days of purchase</p>
+                        <button onclick="document.getElementById('blueberry2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/B6.webp" alt="Blueberry Smoothie" onclick="document.getElementById('blueberry3-dialog').showModal()">
+                    <p class="price">$6.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Blueberry Smoothie', '$6.99', '../Media/Images/B6.webp')">Add to Cart</button>
+                    
+                    <dialog id="blueberry3-dialog">
+                        <h3>Blueberry Smoothie Details</h3>
+                        <p><strong>Size:</strong> 16oz bottle</p>
+                        <p><strong>Ingredients:</strong> Blueberries, banana, Greek yogurt, almond milk</p>
+                        <p><strong>Nutrition:</strong> 250 calories, 5g protein, excellent source of antioxidants</p>
+                        <p><strong>Allergens:</strong> Contains dairy</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, consume within 3 days</p>
+                        <button onclick="document.getElementById('blueberry3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-category">
+            <h2>Raspberries</h2>
+            <p class="product-description">Raspberries are rich in fiber and vitamin C, aiding digestion. Their tangy-sweet flavor makes them perfect for smoothies, desserts, and jams.</p>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="../Media/Images/B7.jpg" alt="Fresh Raspberries" onclick="document.getElementById('raspberry1-dialog').showModal()">
+                    <p class="price">$5.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Raspberries', '$5.49', '../Media/Images/B7.jpg')">Add to Cart</button>
+                    
+                    <dialog id="raspberry1-dialog">
+                        <h3>Fresh Raspberries Details</h3>
+                        <p><strong>Variety:</strong> Heritage</p>
+                        <p><strong>Origin:</strong> Oregon, USA</p>
+                        <p><strong>Nutrition:</strong> 8g fiber per cup, excellent source of vitamin C</p>
+                        <p><strong>Season:</strong> June through October</p>
+                        <p><strong>Storage:</strong> Refrigerate unwashed, consume within 2-3 days</p>
+                        <button onclick="document.getElementById('raspberry1-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/B8.jpg" alt="Raspberries on a Plate" onclick="document.getElementById('raspberry2-dialog').showModal()">
+                    <p class="price">$6.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Raspberries on Plate', '$6.99', '../Media/Images/B8.jpg')">Add to Cart</button>
+                    
+                    <dialog id="raspberry2-dialog">
+                        <h3>Raspberry Plate Details</h3>
+                        <p><strong>Contents:</strong> 1 pint fresh raspberries</p>
+                        <p><strong>Preparation:</strong> Hand-selected premium berries</p>
+                        <p><strong>Perfect for:</strong> Cheese boards or dessert plating</p>
+                        <p><strong>Seasonal:</strong> Available July through September</p>
+                        <p><strong>Storage:</strong> Consume within 1-2 days for best quality</p>
+                        <button onclick="document.getElementById('raspberry2-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="../Media/Images/B9.jpg" alt="Raspberry Tart" onclick="document.getElementById('raspberry3-dialog').showModal()">
+                    <p class="price">$7.49</p>
+                    <button class="add-to-cart" onclick="addToCart('Raspberry Tart', '$7.49', '../Media/Images/B9.jpg')">Add to Cart</button>
+                    
+                    <dialog id="raspberry3-dialog">
+                        <h3>Raspberry Tart Details</h3>
+                        <p><strong>Size:</strong> 6-inch diameter</p>
+                        <p><strong>Ingredients:</strong> Fresh raspberries, pastry cream, shortbread crust</p>
+                        <p><strong>Allergens:</strong> Contains wheat, dairy, eggs</p>
+                        <p><strong>Serves:</strong> 4-6 people</p>
+                        <p><strong>Storage:</strong> Keep refrigerated, best consumed within 2 days</p>
+                        <button onclick="document.getElementById('raspberry3-dialog').close()">Close</button>
+                    </dialog>
+                    
+                    <div class="comments-section">
+                        <h3>Customer Reviews</h3>
+                        <div class="existing-comments">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                        <form class="comment-form">
+                            <input type="text" name="commenter-name" placeholder="Your name" required>
+                            <textarea name="comment-text" placeholder="Share your thoughts..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Junior's Fruit Shop. Follow us on <a href="#social">Facebook</a><br> <a href="#social">Instagram</a> <br>  <a href="#social">Twitter</a></p>
+    </footer>
+
+</body>
+</html>
